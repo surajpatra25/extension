@@ -1,0 +1,44 @@
+{
+  "name": "Deals @Meijer",
+  "version": "2.0",
+  "description": "An extension for getting the deals and offers at meijer easily",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "https://*.google.com/"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js", "jquery.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/meijer-logo.png",
+      "32": "images/meijer-logo.png",
+      "48": "images/meijer-logo.png",
+      "128": "images/meijer-logo.png"
+    }
+  },
+  "icons": {
+    "16": "images/meijer-logo.png",
+    "32": "images/meijer-logo.png",
+    "48": "images/meijer-logo.png",
+    "128": "images/meijer-logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["localnotification.js", "jquery.js"],
+      "css": ["divStyle.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "productRecommendation.html",
+    "right-arrow-angle-svgrepo-com.svg",
+    "left-arrow-angle-svgrepo-com.svg"
+  ],
+  "manifest_version": 2
+}

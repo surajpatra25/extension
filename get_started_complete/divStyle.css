@@ -1,0 +1,119 @@
+#offerResults {
+  background-color: #c0c8ce;
+  width: 200px;
+  height: 350px;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  z-index: 1000;
+  overflow: scroll;
+}
+#offerResults:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+@keyframes slidein {
+  from {
+    right: -100px;
+    top: 100px;
+  }
+  to {
+    right: 100px;
+    top: 100px;
+  }
+}
+.offersImage {
+  width: 180px;
+  height: 180px;
+}
+.mjr-extension-row {
+  text-align: center;
+}
+#closeOffers {
+  padding: 2px 5px;
+  background: #ccc;
+  float: right;
+}
+.mjrHeading {
+  display: inline-flex;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.mjrRow {
+  min-width: 172px;
+  float: left;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#mjrContainer {
+  -webkit-animation: slide 60s ease 1;
+  display: inline-flex;
+  margin: 0, 10px, 10px, 0;
+}
+@-webkit-keyframes slide {
+  10% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: -180px;
+  }
+  30% {
+    margin-left: -360px;
+  }
+  50% {
+    margin-left: -540px;
+  }
+  60% {
+    margin-left: -720px;
+  }
+  70% {
+    margin-left: -900px;
+  }
+  80% {
+    margin-left: -1080px;
+  }
+  90% {
+    margin-left: -1260px;
+  }
+  100% {
+    margin-left: 1440px;
+  }
+}
+#mjr-right-button {
+  position: fixed;
+  top: 250px;
+  right: 85px;
+  background-color: white;
+  animation-duration: 2s;
+  animation-name: slideinRightArrow;
+}
+#mjr-left-button {
+  position: fixed;
+  top: 250px;
+  right: 290px;
+  background-color: white;
+  animation-duration: 2s;
+  animation-name: slideinLeftArrow;
+}
+@keyframes slideinRightArrow {
+  from {
+    right: -100px;
+    top: 250px;
+  }
+  to {
+    right: 100px;
+    top: 250px;
+  }
+}
+@keyframes slideinLeftArrow {
+  from {
+    right: -100px;
+    top: 250px;
+  }
+  to {
+    right: 290px;
+    top: 250px;
+  }
+}
